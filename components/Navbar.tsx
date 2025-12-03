@@ -51,13 +51,10 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className='flex justify-between items-center px-0 sm:px-8 lg:px-15 py-4 md:py-6 relative z-50'>
+            <nav className=' w-full h-19 flex bg-white justify-between items-center px-0 sm:px-8 lg:px-15 py-4 md:py-6 fixed z-50'>
                 <Link href="/">
-                    <img className='w-18 h-18 lg:w-[100px] lg:h-[100px] object-contain' src='datadorfLogo.png' alt="Logo" />
+                    <img className='w-18 h-18 object-contain' src='datadorfLogo.png' alt="Logo" />
                 </Link>
-
-                {/* --- Desktop Menu (เปลี่ยนจาก lg เป็น sm) --- */}
-                {/* ใช้ sm:flex เพื่อแสดงเมื่อจอ >= 640px */}
                 <div className='hidden sm:flex gap-4 md:gap-8 lg:gap-10 items-center'>
                     {menu.map(item => {
                         const isActive = path === item.href;
@@ -78,8 +75,6 @@ export default function Navbar() {
                     })}
                 </div>
 
-                {/* --- Hamburger Button (เปลี่ยนจาก lg เป็น sm) --- */}
-                {/* ใช้ sm:hidden เพื่อซ่อนเมื่อจอ >= 640px (แสดงเฉพาะตอน < 640px) */}
                 <button
                     onClick={toggleMenu}
                     className='sm:hidden text-black focus:outline-none'
@@ -92,15 +87,12 @@ export default function Navbar() {
                 </button>
             </nav>
 
-            {/* --- Mobile Drawer --- */}
-            {/* Overlay: ใช้ sm:hidden เพื่อไม่ให้แสดงในจอใหญ่ */}
             <div
                 className={`fixed inset-0 z-40 bg-black/50 transition-opacity duration-300 sm:hidden
                 ${isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}
                 onClick={toggleMenu}
             ></div>
 
-            {/* Side Menu: ใช้ sm:hidden เพื่อไม่ให้แสดงในจอใหญ่ */}
             <div
                 className={`fixed top-0 right-0 z-50 h-full w-[280px] bg-white shadow-xl transition-transform duration-300 ease-in-out sm:hidden
                 ${isOpen ? "translate-x-0" : "translate-x-full"}`}
