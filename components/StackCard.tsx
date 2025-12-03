@@ -8,8 +8,9 @@ import bgProduct from "@/public/productBg.png";
 
 interface StackCardItem {
     content: string;
-    title: string;
-    image: string;
+    title: string[];  // ← เปลี่ยนเป็น array
+    images: string[]; // ← image → images
+    tools: string[];
 }
 
 interface StackCardProps {
@@ -107,7 +108,7 @@ export default function StackCard({ items }: StackCardProps) {
                             </button>
                         </div>
 
-                        <div key={activeItem.title} className="stack-card-fade flex flex-col gap-2 text-center lg:text-left max-w-2xl">
+                        <div key={activeItem.title.join("-")} className="stack-card-fade flex flex-col gap-2 text-center lg:text-left max-w-2xl">
                             <p className="text-[#249CFF] font-bold text-xl md:text-2xl">
                                 {activeItem.content}
                             </p>
@@ -151,7 +152,7 @@ function CardImage({ item, className }: { item: StackCardItem; className?: strin
     return (
         <div className={`absolute inset-0 transition-all duration-500 ease-out ${className ?? ""}`}>
             <Image
-                src={item.image}
+                src={item.images[0]}
                 alt={item.content}
                 fill
                 className="rounded-3xl object-cover shadow-lg"
