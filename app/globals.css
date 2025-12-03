@@ -7,3 +7,54 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+
+
+/* ปุ่มเริ่มต้นสำหรับ desktop */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 30px !important;
+  height: 30px !important;
+  color: #0d0d0d !important;   
+  transform: scale(1);
+  background-color: rgb(207, 207, 207); 
+  padding: 5px;
+  border-radius: 50%;  
+  z-index: 20;              
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important;
+}
+
+/* สำหรับ tablet */
+@media (max-width: 1024px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 25px !important;
+    height: 25px !important;
+    padding: 4px;
+    transform: scale(0.6);
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 18px !important;
+  }
+}
+
+/* สำหรับ mobile */
+@media (max-width: 640px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 10px !important;
+    height: 10px !important;
+    padding: 3px;
+    transform: scale(1.5);
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 12px !important;
+  }
+}
+
+

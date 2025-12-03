@@ -56,8 +56,6 @@ export default function Navbar() {
                     <img className='w-18 h-18 lg:w-[100px] lg:h-[100px] object-contain' src='datadorfLogo.png' alt="Logo" />
                 </Link>
 
-                {/* --- Desktop Menu (เปลี่ยนจาก lg เป็น sm) --- */}
-                {/* ใช้ sm:flex เพื่อแสดงเมื่อจอ >= 640px */}
                 <div className='hidden sm:flex gap-4 md:gap-8 lg:gap-10 items-center'>
                     {menu.map(item => {
                         const isActive = path === item.href;
