@@ -59,7 +59,7 @@ export default function page() {
     <div className="pt-20 md:pt-30 lg:pt-19">
       <div className="lg:pr-4 pb-25 lg:pt-2 rounded-2xl bg-linear-to-b from-[#249CFF] to-[#D9EEFF]-500">
         <div className='p-6 flex flex-col bg-white rounded-2xl lg:py-25 '>
-          <p className='text-4xl lg:text-5xl text-[#249CFF] font-bold text-center'>ติดต่อเรา</p>
+          <p className='text-4xl lg:text-5xl text-[#249CFF] font-bold text-center pt-4'>ติดต่อเรา</p>
         </div>
       </div>
       <div className='lg:pt-30 px-3 pt-20 xl:mx-10 mx-1 mb-10'>
@@ -119,23 +119,7 @@ export default function page() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className=" flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4 placeholder:text-[#a5a5a5] focus:outline-[#6BB5F2] "
-                    type="text"
-                  />
-                  <input
-                    placeholder="Phone Number*"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4 placeholder:text-[#a5a5a5] focus:outline-[#6BB5F2]"
-                    type="text"
-                  />
-                  <input
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="Email*"
-                    className="flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4 placeholder:text-[#a5a5a5] focus:outline-[#6BB5F2]"
+                    className=" flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4 placeholder:text-[#a5a5a5] focus:outline-[#6BB5F2]"
                     type="email"
                   />
                 </div>
