@@ -57,7 +57,7 @@ export default function page() {
                                     <div className='p-2 flex justify-center'>
                                         <button onClick={() => {
                                             router.push(`/productDetail/${item.id}`)
-                                        }} className='shadow-[4px_4px_10px_#DBEFFF] py-2 rounded-full px-4 mt-4 text-[#249CFF] border border-[#249CFF] text-[10px] md:text-[16px]  cursor-pointer'>
+                                        }} className='shadow-[4px_4px_10px_#DBEFFF] py-2 rounded-full px-4 mt-4 text-[#249CFF] border border-[#249CFF] text-[10px] md:text-base  cursor-pointer'>
                                             อ่านเพิ่มเติม
                                         </button>
                                     </div>

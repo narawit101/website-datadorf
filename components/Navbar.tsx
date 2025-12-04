@@ -67,7 +67,7 @@ export default function Navbar() {
                                 <div className={`${isActive ? "text-[#249CFF]" : "text-black"} group-hover:text-[#249CFF]`}>
                                     {item.icon}
                                 </div>
-                                <p className={`group-hover:text-[#249CFF] text-[16px] lg:text-[18px]`}>
+                                <p className={`group-hover:text-[#249CFF] text-base lg:text-[18px]`}>
                                     {item.label}
                                 </p>
                             </Link>
@@ -120,7 +120,7 @@ export default function Navbar() {
                                 <div className={`${isActive ? "text-[#249CFF]" : "text-black"} group-hover:text-[#249CFF]`}>
                                     {item.icon}
                                 </div>
-                                <p className={`text-[16px] `}>
+                                <p className={`text-base `}>
                                     {item.label}
                                 </p>
                             </Link>
