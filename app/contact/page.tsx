@@ -111,11 +111,11 @@ export default function page() {
             <div className="flex flex-col border-2 bg-white border-[#FFFFFF] rounded-lg shadow-[4px_4px_10px_#DBEFFF] lg:py-8 lg:px-15 p-4">
               <div className="grid grid-rows-1 lg:grid-cols-2 lg:gap-8 gap-8 ">
                 <div className="flex flex-col gap-4">
-                  <p className="text-black font-light text-xl md:text-2xl">
+                  <p className="text-black font-semibold text-xl md:text-2xl">
                     ส่งข้อความหาเรา
                   </p>
                   <input
-                    placeholder="Name*"
+                    placeholder="ชื่อ*"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
@@ -123,7 +123,7 @@ export default function page() {
                     type="text"
                   />
                   <input
-                    placeholder="Phone Number*"
+                    placeholder="เบอร์โทรศัพท์*"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
@@ -134,25 +134,25 @@ export default function page() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="Email*"
+                    placeholder="อีเมล*"
                     className="flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4 placeholder:text-[#a5a5a5] focus:outline-[#6BB5F2]"
                     type="email"
                   />
                 </div>
-                <div>
+                <div className="lg:mt-12">
                   <textarea
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="message*"
-                    className="flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4 min-h-80 resize-y w-full placeholder:text-[#a5a5a5] focus:outline-[#6BB5F2]"
+                    placeholder="ข้อความ*"
+                    className="flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4 min-h-60 resize-y w-full placeholder:text-[#a5a5a5] focus:outline-[#6BB5F2]"
                   />
                 </div>
               </div>
               <div className="flex justify-center items-center my-10">
                 <button
                   type="submit"
-                  className="text-white p-4 bg-[#6BB5F2] rounded-full shadow-xl hover:cursor-pointer hover:scale-105 transition-all"
+                  className="text-white px-8 py-4 bg-[#6BB5F2] rounded-full shadow-xl hover:cursor-pointer hover:scale-105 transition-all"
                 >
                   ส่งข้อความ
                 </button>
