@@ -120,7 +120,7 @@ export default function Activity({ items }: ActivityProps) {
                                         <p className="text-black leading-relaxed text-sm md:text-lg">
                                             {item.title}
                                         </p>
-                                        <div className="flex flex-col gap-4 my-4 mx-auto lg:mx-0">
+                                        {/* <div className="flex flex-col gap-4 my-4 mx-auto lg:mx-0">
                                             <button
                                                 onClick={() => router.push("/services")}
                                                 className="mt-2 bg-white text-[#249CFF] border border-[#249CFF] py-1 px-4 sm:py-2.5 sm:px-6 rounded-full flex items-center justify-center md:justify-start gap-2 transition-all hover:bg-[#249CFF] hover:text-white hover:shadow-md self-center md:self-start  hover:cursor-pointer"
@@ -128,7 +128,7 @@ export default function Activity({ items }: ActivityProps) {
                                                 <span className="font-medium text-[12px] lg:text-sm ">ดูกิจกรรมทั้งหมด</span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24"><path fill="currentColor" fillRule="evenodd" d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z" clipRule="evenodd"></path></svg>
                                             </button>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </SwiperSlide>

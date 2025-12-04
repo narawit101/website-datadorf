@@ -43,7 +43,7 @@ export default function page() {
 
                         return (
                             <div key={index}>
-                                <div className='shadow-[4px_4px_10px_#DBEFFF] rounded-md p-2 md:rounded-2xl' >
+                                <div className='shadow-[4px_4px_10px_#DBEFFF] rounded-md p-2 md:rounded-2xl hover:-translate-y-3 transition-all duration-350'  >
                                     <div className='aspect-video w-full overflow-hidden rounded-md md:rounded-2xl '>
                                         {item.images.map((img, index) => (
                                             <Image key={index} className='w-full h-full object-cover' src={img}
