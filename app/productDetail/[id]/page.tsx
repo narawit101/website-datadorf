@@ -10,11 +10,12 @@ import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+import type { Swiper as SwiperType } from "swiper";
 
 export default function ProductDetailPage() {
     const { id } = useParams();
     const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null);
-    const mainSwiperRef = useRef<SwiperClass | null>(null);
+     const mainSwiperRef = useRef<SwiperType | null>(null); 
 
     const product = MockProduct.find((item) => item.id === Number(id));
 
@@ -23,11 +24,11 @@ export default function ProductDetailPage() {
     }
 
     return (
-        <div className="px-2">
+        <div className="px-2 py-10 lg:py-10 lg:pt-30 pt-20 md:pt-30 md:py-10">
 
             <div className="relative w-full">
                 <Swiper
-
+                    onSwiper={(swiper) => (mainSwiperRef.current = swiper)}
                     spaceBetween={10}
                     navigation={false}
                     thumbs={{ swiper: thumbsSwiper }}
@@ -124,7 +125,7 @@ export default function ProductDetailPage() {
             </div>
 
             <div className='pt-5'>
-                <a href="/products" className='flex flex-row justify-center  ' ><h1 className='shadow-[4px_4px_10px_#DBEFFF] cursor-pointer p-2 bg-white px-6 rounded-full border border-[#249CFF]'
+                <a href="/products" className='flex flex-row justify-center  ' ><h1 className='shadow-[4px_4px_10px_#DBEFFF] cursor-pointer p-2 bg-white px-6 rounded-full border border-[#249CFF] text-[#249CFF]'
                 >กลับ</h1></a>
             </div>
         </div>
