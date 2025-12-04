@@ -13,9 +13,19 @@
             "/product-4.png"
         ],
         "tools": [
-            "tool1",
-            "tool2",
-            "tool3"
+            {
+                "icon": "https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/2/nextjs-dqhvgu9iwvacgwnwl8bs25.png/nextjs-ghnqttyc6ffbnqnn8xlrpj.png?_a=DATAg1AAZAA0",
+                "name": "next.js"
+            },
+            {
+                "icon": "https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/4/mongodb-6hfhlrdt6ngaen1l3rxluk.png/mongodb-qtf35g5rmklpcbzu0jtuye.png?_a=DATAg1AAZAA0",
+                "name": "mongDB"
+            },
+            {
+                "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png",
+                "name": "node.js"
+            }
+            
         ]
     },
     {

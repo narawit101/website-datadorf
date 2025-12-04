@@ -114,14 +114,28 @@ export default function ProductDetailPage() {
                     }
                 </div>
                 <div className='mt-10'>
-                    <p className='font-bold'>เครื่องมีอที่ใช้</p>
-                    {product.tools?.map((tool, index) => (
-                        <p key={index} className='font-light'>{tool}</p>
-                    ))}
+                    {product.tools && product.tools.length > 0 && (
+                        <div>
+
+                            <p className='font-bold text-[#249CFF]'>เครื่องมีอที่ใช้</p>
+                            <div className='grid grid-cols-3 gap-4 pt-5 md:grid-cols-5'>
+                                {product.tools.map((tool, index) => (
+                                    <div key={index} className="flex flex-col items-center gap-2  rounded-2xl py-4 shadow-[4px_4px_10px_#DBEFFF]">
+                                        <div>
+                                            <img src={tool.icon} alt={tool.name} className="size-10 object-contain md:size-20 lg:size-25" />
+                                        </div>
+                                        <div>
+                                            <p className='font-light text-sm md:text-basex'>{tool.name}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
 
-            <div className='pt-4 '>
+            <div className='pt-10 '>
                 <a href="/products" className='flex flex-row justify-center  ' >
                     <p className='shadow-[4px_4px_10px_#DBEFFF] cursor-pointer p-2 font-medium text-[10px] lg:text-sm bg-white text-[#249CFF] border border-[#249CFF] py-1 px-4 sm:py-2.5 sm:px-6 rounded-full flex items-center justify-center gap-2 transition-all hover:bg-[#249CFF] hover:text-white hover:shadow-md hover:cursor-pointer'>กลับ</p></a>
             </div>
