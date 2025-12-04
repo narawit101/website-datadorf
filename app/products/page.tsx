@@ -32,12 +32,15 @@ export default function page() {
     }
 
     return (
-        <div className='pt-20 md:pt-30 lg:pt-30'>
-            <div className='px-1.5 md:px-5 lg:px-10'>
-                <div className=' flex flex-col '>
+        <div className='pt-20 md:pt-30 lg:pt-19'>
+            <div className='bg-linear-to-b from-[#249CFF] to-[#D9EEFF]-500 pr-0 pb-25 rounded-2xl md:pr-0 lg:pr-4 lg:pt-2'>
+                <div className=' flex flex-col bg-white py-10 px-2  lg:py-25 rounded-2xl lg:px-8 '>
                     <p className='text-4xl lg:text-5xl text-[#249CFF] font-bold text-center'>ผลงานของเรา</p>
-                    <p className='text-center text-sm font-light px-2 pt-6 lg:text-xl'>เราช่วยธุรกิจของคุณเปลี่ยนข้อมูลที่ซับซ้อนให้เป็นภาพรวมที่ชัดเจน ด้วยระบบ Business Intelligence, Data Visualization และ Dashboards ที่ออกแบบมาเพื่อตอบโจทย์การตัดสินใจอย่างมีประสิทธิภาพ ชมตัวอย่างโซลูชันของเรา และค้นพบแนวทางใหม่ในการขับเคลื่อนธุรกิจด้วยข้อมูล</p>
+                    <p className='text-center text-sm font-light px-2 pt-6 lg:text-xl '>เราช่วยธุรกิจของคุณเปลี่ยนข้อมูลที่ซับซ้อนให้เป็นภาพรวมที่ชัดเจน ด้วยระบบ Business Intelligence, Data Visualization และ Dashboards ที่ออกแบบมาเพื่อตอบโจทย์การตัดสินใจอย่างมีประสิทธิภาพ ชมตัวอย่างโซลูชันของเรา และค้นพบแนวทางใหม่ในการขับเคลื่อนธุรกิจด้วยข้อมูล</p>
                 </div>
+            </div>
+            <div className='px-1.5 md:px-5 lg:px-10'>
+
                 <div className='grid grid-cols-2 gap-2 p-2 pt-10 mt-20 md:pb-30 pb-15 md:gap-6 lg:grid-cols-3 lg:gap-15 lg '>
                     {currentItem.map((item, index) => {
 

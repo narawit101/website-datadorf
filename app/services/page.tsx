@@ -4,14 +4,16 @@ import Footer from "@/components/footer";
 
 export default function page() {
     return (
-        <div>
-            <div className='p-15'>
-                <div className='p-6 flex flex-col '>
+        <div className='pt-20 md:pt-30 lg:pt-19'>
+            <div className='bg-linear-to-b from-[#249CFF] to-[#D9EEFF]-500 pr-0 pb-25 rounded-2xl md:pr-0 lg:pr-4 lg:pt-2'>
+                <div className=' flex flex-col bg-white py-10 px-2  lg:py-25 rounded-2xl lg:px-8 '>
                     <p className='text-4xl lg:text-5xl text-[#249CFF] font-bold text-center'>บริการของเรา</p>
-                    <p className='text-center font-light pt-6 lg:text-xl'>เดต้าดอร์ฟให้บริการออกแบบ พัฒนา และอิมพลิเมนต์ระบบ Business Intelligence (BI), Data Visualization และ Dashboards <br />เพื่อช่วยให้ธุรกิจของคุณสามารถ เปลี่ยนข้อมูลที่ซับซ้อนให้เป็น Insight เชิงลึกที่นำไปใช้ได้จริง</p>
+                    <p className='text-center text-sm font-light px-2 pt-6 lg:text-xl '>เดต้าดอร์ฟให้บริการออกแบบ พัฒนา และอิมพลิเมนต์ระบบ Business Intelligence (BI), Data Visualization และ Dashboards เพื่อช่วยให้ธุรกิจของคุณสามารถ เปลี่ยนข้อมูลที่ซับซ้อนให้เป็น Insight เชิงลึกที่นำไปใช้ได้จริงล</p>
                 </div>
-                <div className='grid grid-cols-1  gap-5  p-6  pt-15 '>
-                    <div className='shadow-[4px_4px_10px_#DBEFFF] px-3 p-6  flex flex-col items-center  gap-5 rounded-2xl md:flex-row md:py-20 md:gap-40 md:pl-10 lg:py-35  lg:px-10 lg:gap-80'>
+            </div>
+            <div className=''>
+                <div className='grid grid-cols-1  gap-5  p-4 md:p-8 lg:p-10  pt-4 lg:pt-15 '>
+                    <div className='shadow-[4px_4px_10px_#DBEFFF] px-3 p-6  flex flex-col items-center  gap-5 rounded-2xl md:flex-row md:py-20 md:gap-40 md:pl-10 lg:py-35  lg:px-10 lg:gap-80 '>
                         <div className='flex flex-col items-center gap-2 lg:w-85 md:w-65'>
                             <svg className='w-10 h-10 md:w-20 md:h-20 lg:w-25 lg:h-25' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M11 20H3q-.425 0-.712-.288T2 19t.288-.712T3 18h8q.425 0 .713.288T12 19t-.288.713T11 20m-6-3q-.825 0-1.412-.587T3 15V6q0-.825.588-1.412T5 4h14q.825 0 1.413.588T21 6h-5.5q-1.45 0-2.475 1.025T12 9.5V16q0 .425-.288.713T11 17zm10.5 3q-.625 0-1.062-.437T14 18.5v-9q0-.625.438-1.062T15.5 8h5q.625 0 1.063.438T22 9.5v9q0 .625-.437 1.063T20.5 20zm2.5-7.5q.325 0 .538-.225t.212-.525q0-.325-.213-.537T18 11q-.3 0-.525.213t-.225.537q0 .3.225.525T18 12.5" /></svg>
                             <p className='text-center text-4 font-bold text-[#249CFF] md:text-[18px] lg:text-[20px]'>BI Dashboard & Reporting Platform</p>
