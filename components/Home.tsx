@@ -15,7 +15,7 @@ export default function Home() {
     return (
         <div className="overflow-hidden pt-20 md:pt-30 lg:pt-19">
             <div className="lg:pr-4 pb-25 lg:pt-2 rounded-2xl bg-linear-to-b from-[#249CFF] to-[#D9EEFF]-500">
-                <div className='p-6 flex flex-col bg-white rounded-2xl lg:py-25 '>
+                <div className='p-7 flex flex-col bg-white rounded-2xl lg:py-25 '>
                     <div className='flex flex-col gap-2 '>
                         {/* hero */}
                         <div className="px-6 md:p-0">
