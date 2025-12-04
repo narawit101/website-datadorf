@@ -32,13 +32,13 @@ export default function page() {
     }
 
     return (
-        <div>
-            <div className='px-1 md:px-5 lg:px-10'>
-                <div className='p-6 flex flex-col '>
+        <div className='pt-20 md:pt-30 lg:pt-30'>
+            <div className='px-1.5 md:px-5 lg:px-10'>
+                <div className=' flex flex-col '>
                     <p className='lg:text-5xl text-[#249CFF] font-bold text-center text-4xl'>ผลงานของเรา</p>
-                    <p className='text-center text-sm font-light pt-6 lg:text-xl'>เราช่วยธุรกิจของคุณเปลี่ยนข้อมูลที่ซับซ้อนให้เป็นภาพรวมที่ชัดเจน ด้วยระบบ Business Intelligence, Data Visualization และ Dashboards <br />ที่ออกแบบมาเพื่อตอบโจทย์การตัดสินใจอย่างมีประสิทธิภาพ ชมตัวอย่างโซลูชันของเรา และค้นพบแนวทางใหม่ในการขับเคลื่อนธุรกิจด้วยข้อมูล</p>
+                    <p className='text-center text-sm font-light px-2 pt-6 lg:text-xl'>เราช่วยธุรกิจของคุณเปลี่ยนข้อมูลที่ซับซ้อนให้เป็นภาพรวมที่ชัดเจน ด้วยระบบ Business Intelligence, Data Visualization และ Dashboards ที่ออกแบบมาเพื่อตอบโจทย์การตัดสินใจอย่างมีประสิทธิภาพ ชมตัวอย่างโซลูชันของเรา และค้นพบแนวทางใหม่ในการขับเคลื่อนธุรกิจด้วยข้อมูล</p>
                 </div>
-                <div className='grid grid-cols-2 gap-2 p-2 pt-10 pb-30 md:gap-6 lg:grid-cols-3 lg:gap-15 '>
+                <div className='grid grid-cols-2 gap-2 p-2 pt-10 mt-20 pb-30 md:gap-6 lg:grid-cols-3 lg:gap-15 lg '>
                     {currentItem.map((item, index) => {
 
                         return (

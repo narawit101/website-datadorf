@@ -24,9 +24,9 @@ export default function ProductDetailPage() {
     }
 
     return (
-        <div className="px-2 py-10 lg:py-10 lg:pt-30 pt-20 md:pt-30 md:py-10">
+        <div className="px-2 py-10 lg:py-10 lg:pt-20 pt-20 md:pt-30 md:py-10">
 
-            <div className="relative w-full">
+            <div className="relative w-full ">
                 <Swiper
                     onSwiper={(swiper) => (mainSwiperRef.current = swiper)}
                     spaceBetween={10}
@@ -37,7 +37,7 @@ export default function ProductDetailPage() {
                 >
                     {product.images.map((img, index) => (
                         <SwiperSlide key={index}>
-                            <div className="aspect-video w-[90%] mx-auto overflow-hidden lg:aspect-21/9 md:aspect-21/9 md:w[90%] lg:w-[85%]">
+                            <div className="aspect-video w-[90%] mx-auto overflow-hidden lg:aspect-21/8 md:aspect-21/9 md:w[90%] lg:w-[85%]">
                                 <Image
                                     src={img}
                                     alt={`image${index}`}
@@ -55,7 +55,7 @@ export default function ProductDetailPage() {
                     className="
                                 absolute left-2 top-1/2 -translate-y-1/2 
                                 bg-gray-200/70 backdrop-blur  p-2 rounded-full
-                                hover:border-[#249CFF] hover:border transition z-50 border border-[#E2E8F0] cursor-pointer
+                                hover:border-[#249CFF] hover:border transition z-20 border border-[#E2E8F0] cursor-pointer
                             "
                 >
                     <svg className='text-[#5B5555]' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
@@ -68,7 +68,7 @@ export default function ProductDetailPage() {
                     className="
                                 absolute right-2 top-1/2 -translate-y-1/2 
                                 bg-gray-200/70 backdrop-blur  p-2 rounded-full
-                                hover:border-[#249CFF] hover:border transition z-50 border border-[#E2E8F0] cursor-pointer
+                                hover:border-[#249CFF] hover:border transition z-20 border border-[#E2E8F0] cursor-pointer
                             "
                 >
                     <svg className='text-[#5B5555]' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
@@ -76,9 +76,6 @@ export default function ProductDetailPage() {
                     </svg>
                 </button>
             </div>
-
-
-
 
             <div className='px-3 md:px-8 lg:px-23'>
                 <Swiper
@@ -91,7 +88,7 @@ export default function ProductDetailPage() {
                     className="mySwiper mt-5">
                     {product.images.map((img, index) => (
                         <SwiperSlide key={index}>
-                            <div className='aspect-21/9  w-[95%] mx-auto overflow-hidden lg:w-[90%] '>
+                            <div className='aspect-21/7  w-[95%] mx-auto overflow-hidden lg:w-[90%] '>
                                 <Image src={img} alt={`image${index}`}
                                     width={500}
                                     height={200}
@@ -104,9 +101,9 @@ export default function ProductDetailPage() {
             </div>
 
             <div className='mt-15 px-4 lg:px-23' >
-                <h1 className="text-xl font-bold mt-8 text-[#249CFF] lg:text-2xl">
+                <p className="text-xl font-bold mt-8 text-[#249CFF] lg:text-2xl">
                     {product.content}
-                </h1>
+                </p>
 
                 <div className='flex flex-col gap-4 font-light mt-3' >
                     {Array.isArray(product.title)
@@ -117,7 +114,7 @@ export default function ProductDetailPage() {
                     }
                 </div>
                 <div className='mt-10'>
-                    <h1 className='font-bold'>เครื่องมีอที่ใช้</h1>
+                    <p className='font-bold'>เครื่องมีอที่ใช้</p>
                     {product.tools?.map((tool, index) => (
                         <p key={index} className='font-light'>{tool}</p>
                     ))}
@@ -125,8 +122,8 @@ export default function ProductDetailPage() {
             </div>
 
             <div className='pt-5'>
-                <a href="/products" className='flex flex-row justify-center  ' ><h1 className='shadow-[4px_4px_10px_#DBEFFF] cursor-pointer p-2 bg-white px-6 rounded-full border border-[#249CFF] text-[#249CFF]'
-                >กลับ</h1></a>
+                <a href="/products" className='flex flex-row justify-center  ' ><p className='shadow-[4px_4px_10px_#DBEFFF] cursor-pointer p-2 bg-white px-6 rounded-full border border-[#249CFF] text-[#249CFF]'
+                >กลับ</p></a>
             </div>
         </div>
     )
