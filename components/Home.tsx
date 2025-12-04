@@ -30,9 +30,9 @@ export default function Home() {
                                     onClick={(() => {
                                         router.push('/contact')
                                     })}
-                                    className='bg-[#249CFF] text-white font-light text-xl md:text-2xl py-2 px-6 rounded-full flex items-center justify-center gap-3 hover:bg-[#0A75D1] transition-all duration-300 hover:scale-105 hover:cursor-pointer hover:shadow-lg'>
+                                    className='bg-[#249CFF] text-white  py-2 px-6 rounded-full flex items-center justify-center gap-3 hover:bg-[#0A75D1] transition-all duration-300 hover:scale-105 hover:cursor-pointer hover:shadow-lg'>
                                     <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24"><path fill="none" stroke="#fff" strokeLinecap="round" strokeWidth={1.5} d="m10.038 5.316l.649 1.163c.585 1.05.35 2.426-.572 3.349c0 0-1.12 1.119.91 3.148c2.028 2.028 3.147.91 3.147.91c.923-.923 2.3-1.158 3.349-.573l1.163.65c1.585.884 1.772 3.106.379 4.5c-.837.836-1.863 1.488-2.996 1.53c-1.908.073-5.149-.41-8.4-3.66c-3.25-3.251-3.733-6.492-3.66-8.4c.043-1.133.694-2.159 1.53-2.996c1.394-1.393 3.616-1.206 4.5.38Z"></path></svg>
-                                    <p>ติดต่อเรา</p>
+                                    <p className="font-bloud text-base md:text-xl ">ติดต่อเรา</p>
                                 </button>
                             </div>
                         </div>
