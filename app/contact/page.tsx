@@ -119,7 +119,23 @@ export default function page() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className=" flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4 placeholder:text-[#a5a5a5] focus:outline-[#6BB5F2]"
+                    className=" flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4 placeholder:text-[#a5a5a5] focus:outline-[#6BB5F2] "
+                    type="text"
+                  />
+                  <input
+                    placeholder="Phone Number*"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4 placeholder:text-[#a5a5a5] focus:outline-[#6BB5F2]"
+                    type="text"
+                  />
+                  <input
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    placeholder="Email*"
+                    className="flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4 placeholder:text-[#a5a5a5] focus:outline-[#6BB5F2]"
                     type="email"
                   />
                 </div>
