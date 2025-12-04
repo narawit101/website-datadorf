@@ -5,7 +5,6 @@ import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import bgProduct from "@/public/productBg.png";
 
-
 interface StackCardItem {
     content: string;
     title: string[];
@@ -37,6 +36,7 @@ const transitionStyles = `
 export default function StackCard({ items }: StackCardProps) {
     const router = useRouter();
     const safeItems = useMemo(() => (items.length ? items : []), [items]);
+    // ถ้าอยากโชว์ทั้งหมดไม่ต้อง slice หรือถ้าจะ loop 3 อันก็ใช้ logic เดิม
     const carouselItems = useMemo(() => safeItems.slice(0, 3), [safeItems]);
     const displayItems = carouselItems.length ? carouselItems : safeItems;
     const [activeIndex, setActiveIndex] = useState(0);
@@ -72,43 +72,30 @@ export default function StackCard({ items }: StackCardProps) {
                 <p className="text-3xl lg:text-4xl font-bold text-center mb-10">
                     ผลงานของเรา
                 </p>
+                <div className="my-20 relative max-w-[1300px] mx-auto">
+                    <button
+                        aria-label="previous project"
+                        onClick={handlePrev}
+                        className="absolute z-20  left-2 md:left-8 lg:top-1/2 top-50 -translate-y-1/2 flex w-10 h-10 md:w-12 md:h-12 rounded-full border border-[#E2E8F0] bg-white/80 backdrop-blur-sm text-[#5B5555] items-center justify-center hover:bg-[#e0dedead] transition-all duration-100 hover:cursor-pointer shadow-sm"
+                    >
+                        <svg width="35" height="35" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M15.778 7.05L10.828 12l4.95 4.95l-1.414 1.414L8 12l6.364-6.364z" />
+                        </svg>
+                    </button>
 
-                <div className="my-20">
-                    <div className="w-full px-4 sm:px-6 md:px-10 lg:px-20  flex flex-col gap-8 lg:flex-row items-center justify-center ">
-
-                        <div className="flex items-center justify-center gap-4 md:gap-9 ">
-                            <button
-                                aria-label="previous project"
-                                onClick={handlePrev}
-                                className="flex w-10 h-10 md:w-12 md:h-12 rounded-full border border-[#E2E8F0] text-[#5B5555] items-center justify-center hover:bg-[#e0dedead] transition-all duration-100 hover:cursor-pointer"
-                            >
-                                <svg width="35" height="35" viewBox="0 0 24 24">
-                                    <path fill="currentColor" d="M15.778 7.05L10.828 12l4.95 4.95l-1.414 1.414L8 12l6.364-6.364z" />
-                                </svg>
-                            </button>
-
+                    <div className="w-full px-4 sm:px-6 md:px-10 lg:px-20 flex flex-col gap-15 xl:gap-20 lg:flex-row items-center justify-center">
+                        <div className="flex items-center justify-center gap-4 md:gap-9">
                             <div className="stack-card-fade relative w-60 h-75 lg:w-64 lg:h-80 flex items-center justify-center">
                                 <div className="absolute inset-0 flex items-center justify-center">
                                     <div className="relative w-full h-full">
-                                        <CardImage item={prevItem} className="-rotate-10 -translate-x-4 md:-translate-x-6 opacity-70 " />
+                                        <CardImage item={prevItem} className="-rotate-10 -translate-x-4 md:-translate-x-6 opacity-70" />
                                         <CardImage item={activeItem} className="rotate-0 scale-105 z-20 shadow-2xl" />
                                         <CardImage item={nextItem} className="rotate-8 translate-x-4 md:translate-x-6 opacity-80" />
                                     </div>
                                 </div>
                             </div>
-
-                            <button
-                                aria-label="next project"
-                                onClick={handleNext}
-                                className="flex w-10 h-10 md:w-12 md:h-12 rounded-full border border-[#E2E8F0] text-[#5B5555] items-center justify-center hover:bg-[#e0dedead] transition-all duration-100 hover:cursor-pointer"
-                            >
-                                <svg width="35" height="35" viewBox="0 0 24 24">
-                                    <path fill="currentColor" d="M9 6.05L14.95 12L9 17.95l1.414 1.414L17.778 12l-7.364-7.364z" />
-                                </svg>
-                            </button>
                         </div>
-
-                        <div key={activeItem.title.join("-")} className="stack-card-fade flex flex-col gap-2 text-center lg:text-left max-w-2xl">
+                        <div key={activeItem.title.join("-")} className="stack-card-fade flex flex-col gap-2 text-center lg:text-left max-w-2xl px-4 md:px-0">
                             <p className="text-[#249CFF] font-bold text-xl md:text-2xl">
                                 {activeItem.content}
                             </p>
@@ -117,20 +104,29 @@ export default function StackCard({ items }: StackCardProps) {
                             </p>
 
                             <div className="flex flex-col gap-4 items-center justify-center lg:items-start">
-                                <div className="flex flex-col gap-4 my-6 ">
+                                <div className="flex flex-col gap-4 my-6">
                                     <button
                                         onClick={() => router.push('/products')}
-                                        className='mt-2 bg-white text-[#249CFF] border border-[#249CFF] py-1 px-4 sm:py-2.5 sm:px-6 rounded-full flex items-center justify-center md:justify-start gap-2 transition-all hover:bg-[#249CFF] hover:text-white hover:shadow-md self-center md:self-start hover:cursor-pointer'>
-                                        <p className="font-medium text-[12px] lg:text-[14px] ">ดูผลงานเพิ่มเติม</p>
+                                        className='mt-2 bg-white text-[#249CFF] border border-[#249CFF] py-1 px-4 sm:py-2.5 sm:px-6 rounded-full flex items-center justify-center md:justify-start gap-2 transition-all hover:bg-[#249CFF] hover:text-white hover:shadow-md self-center md:self-start hover:cursor-pointer'
+                                    >
+                                        <p className="font-medium text-[12px] lg:text-[14px]">ดูผลงานเพิ่มเติม</p>
                                         <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24"><path fill="currentColor" fillRule="evenodd" d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z" clipRule="evenodd"></path></svg>
                                     </button>
                                 </div>
                             </div>
                         </div>
-
                     </div>
+                    <button
+                        aria-label="next project"
+                        onClick={handleNext}
+                        className="absolute z-20 right-2 lg:right-8 lg:top-1/2 top-50 -translate-y-1/2 flex w-10 h-10 md:w-12 md:h-12 rounded-full border border-[#E2E8F0] bg-white/80 backdrop-blur-sm text-[#5B5555] items-center justify-center hover:bg-[#e0dedead] transition-all duration-100 hover:cursor-pointer shadow-sm"
+                    >
+                        <svg width="35" height="35" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M9 6.05L14.95 12L9 17.95l1.414 1.414L17.778 12l-7.364-7.364z" />
+                        </svg>
+                    </button>
                     {displayItems.length > 1 && (
-                        <div className="flex items-center justify-center gap-2">
+                        <div className="flex items-center justify-center gap-2 mt-8">
                             {displayItems.map((_, index) => (
                                 <button
                                     key={index}
@@ -141,9 +137,9 @@ export default function StackCard({ items }: StackCardProps) {
                             ))}
                         </div>
                     )}
+
                 </div>
             </div>
-
         </div>
     );
 }

@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const styles = `
   .custom-swiper {
-    width: 80%;
+    width: 90%;
     padding-top: 50px;
     padding-bottom: 50px;
   }

@@ -51,7 +51,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className=' w-full h-19 flex bg-white justify-between items-center px-0 sm:px-8 lg:px-15 py-4 md:py-6 fixed z-50'>
+            <nav className=' w-full h-19 flex bg-white justify-between items-center px-6 sm:px-8 lg:px-15 py-4 md:py-6 fixed z-50'>
                 <Link href="/">
                     <img className='w-18 h-18 object-contain' src='datadorfLogo.png' alt="Logo" />
                 </Link>
