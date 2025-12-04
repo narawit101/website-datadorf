@@ -63,7 +63,7 @@ export default function page() {
         </div>
       </div>
       <div className='lg:pt-30 px-3 pt-20 xl:mx-10 mx-1 mb-10'>
-        <div className='flex flex-col gap-10'>
+        <div className='flex flex-col gap-20'>
           <div className='grid grid-rows-1 lg:grid-cols-2 lg:gap-8 gap-15 border-2 bg-white border-[#FFFFFF] rounded-lg shadow-[4px_4px_10px_#DBEFFF] lg:pt-4 lg:py-8 lg:px-6 p-4'>
             <iframe
               className='shadow-[10px_10px_10px_#DBEFFF] rounded-lg xl:h-[500px] lg:h-[400px] h-[250px] w-full'
@@ -145,7 +145,7 @@ export default function page() {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="ข้อความ*"
-                    className="flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4 min-h-60 resize-y w-full placeholder:text-[#a5a5a5] focus:outline-[#6BB5F2]"
+                    className="flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4 min-h-47 resize-y w-full placeholder:text-[#a5a5a5] focus:outline-[#6BB5F2]"
                   />
                 </div>
               </div>
