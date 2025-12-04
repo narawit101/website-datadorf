@@ -27,7 +27,7 @@ export default function Service() {
                         <p className="text-[#249CFF] font-bold text-xl lg:text-2xl mb-2">
                             BI Dashboard & Reporting Platform
                         </p>
-                        <p className="text-sm xl:text-[18px]">ออกแบบ Platform และ BI Dashboard ที่ช่วยวิเคราะห์ข้อมูลแบบเรียลไทม์</p>
+                        <p className="text-black leading-relaxed text-[14px] md:text-lg">ออกแบบ Platform และ BI Dashboard ที่ช่วยวิเคราะห์ข้อมูลแบบเรียลไทม์</p>
                     </div>
 
                     <div className="shadow-[4px_4px_10px_#DBEFFF] p-6 rounded-2xl bg-white xl:-ml-50 xl:w-[70%] w-full">
@@ -35,7 +35,7 @@ export default function Service() {
                         <p className="text-[#249CFF] font-bold text-2xl mb-2">
                             Custom Data Analytics & Insights
                         </p>
-                        <p className="text-sm xl:text-[18px]">วิเคราะห์ข้อมูลเชิงลึกเพื่อค้นหา Insight ที่ช่วยขับเคลื่อนธุรกิจ</p>
+                        <p className="text-black leading-relaxed text-[14px] md:text-lg">วิเคราะห์ข้อมูลเชิงลึกเพื่อค้นหา Insight ที่ช่วยขับเคลื่อนธุรกิจ</p>
                     </div>
 
                     <div className="shadow-[4px_4px_10px_#DBEFFF] p-6 rounded-2xl bg-white xl:-mr-5 xl:w-[70%] w-full">
@@ -44,7 +44,7 @@ export default function Service() {
                         <p className="text-[#249CFF] font-bold text-2xl mb-2">
                             Consulting & Training
                         </p>
-                        <p className="text-sm xl:text-[18px]">ให้คำปรึกษาการใช้ Business Intelligence ในองค์กร</p>
+                        <p className="text-black leading-relaxed text-[14px] md:text-lg">ให้คำปรึกษาการใช้ Business Intelligence ในองค์กร</p>
                     </div>
                     <div className="flex flex-col gap-4 my-6 ">
                         <button

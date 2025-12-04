@@ -69,7 +69,7 @@ export default function Activity({ items }: ActivityProps) {
                         ))}
                     </div>
                 )} */}
-                <div className="relative py- px-6 md:px-20">
+                <div className="relative px-4 sm:px-6 md:px-20">
                     <Swiper
                         modules={[Autoplay]}
                         spaceBetween={40}
@@ -114,10 +114,10 @@ export default function Activity({ items }: ActivityProps) {
                                         </div>
                                     </div>
                                     <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left space-y-4">
-                                        <h3 className="text-[#249CFF] font-bold text-xl md:text-2xl lg:text-3xl leading-snug">
+                                        <h3 className="text-[#249CFF] font-bold text-xl md:text-2xl">
                                             {item.content}
                                         </h3>
-                                        <p className="text-gray-600 text-base md:text-lg font-light leading-relaxed">
+                                        <p className="text-black leading-relaxed text-[14px] md:text-lg">
                                             {item.title}
                                         </p>
                                         <div className="flex flex-col gap-4 my-4 mx-auto lg:mx-0">

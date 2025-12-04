@@ -8,8 +8,8 @@ import bgProduct from "@/public/productBg.png";
 
 interface StackCardItem {
     content: string;
-    title: string[];  // ← เปลี่ยนเป็น array
-    images: string[]; // ← image → images
+    title: string[];
+    images: string[];
     tools: string[];
 }
 
@@ -74,7 +74,7 @@ export default function StackCard({ items }: StackCardProps) {
                 </p>
 
                 <div className="my-20">
-                    <div className="w-full px-6 md:px-10 lg:px-20  flex flex-col gap-8 lg:flex-row items-center justify-center ">
+                    <div className="w-full px-4 sm:px-6 md:px-10 lg:px-20  flex flex-col gap-8 lg:flex-row items-center justify-center ">
 
                         <div className="flex items-center justify-center gap-4 md:gap-9 ">
                             <button
@@ -112,8 +112,8 @@ export default function StackCard({ items }: StackCardProps) {
                             <p className="text-[#249CFF] font-bold text-xl md:text-2xl">
                                 {activeItem.content}
                             </p>
-                            <p className="text-gray-700 leading-relaxed text-base md:text-lg">
-                                {activeItem.title}
+                            <p className="text-black leading-relaxed text-[14px] md:text-lg">
+                                {activeItem.title[0]}
                             </p>
 
                             <div className="flex flex-col gap-4 items-center justify-center lg:items-start">

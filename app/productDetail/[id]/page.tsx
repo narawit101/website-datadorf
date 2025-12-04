@@ -15,7 +15,7 @@ import type { Swiper as SwiperType } from "swiper";
 export default function ProductDetailPage() {
     const { id } = useParams();
     const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null);
-     const mainSwiperRef = useRef<SwiperType | null>(null); 
+    const mainSwiperRef = useRef<SwiperType | null>(null);
 
     const product = MockProduct.find((item) => item.id === Number(id));
 
@@ -55,7 +55,7 @@ export default function ProductDetailPage() {
                     className="
                                 absolute left-2 top-1/2 -translate-y-1/2 
                                 bg-gray-200/70 backdrop-blur  p-2 rounded-full
-                                hover:border-[#249CFF] hover:border transition z-50 border border-[#E2E8F0] cursor-pointer
+                                hover:border-[#249CFF] hover:border transition z-20 border border-[#E2E8F0] cursor-pointer
                             "
                 >
                     <svg className='text-[#5B5555]' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
@@ -68,7 +68,7 @@ export default function ProductDetailPage() {
                     className="
                                 absolute right-2 top-1/2 -translate-y-1/2 
                                 bg-gray-200/70 backdrop-blur  p-2 rounded-full
-                                hover:border-[#249CFF] hover:border transition z-50 border border-[#E2E8F0] cursor-pointer
+                                hover:border-[#249CFF] hover:border transition z-20 border border-[#E2E8F0] cursor-pointer
                             "
                 >
                     <svg className='text-[#5B5555]' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
@@ -76,10 +76,6 @@ export default function ProductDetailPage() {
                     </svg>
                 </button>
             </div>
-
-
-
-
             <div className='px-3 md:px-8 lg:px-23'>
                 <Swiper
                     onSwiper={setThumbsSwiper}
@@ -125,8 +121,8 @@ export default function ProductDetailPage() {
             </div>
 
             <div className='pt-5'>
-                <a href="/products" className='flex flex-row justify-center  ' ><h1 className='shadow-[4px_4px_10px_#DBEFFF] cursor-pointer p-2 bg-white px-6 rounded-full border border-[#249CFF] text-[#249CFF]'
-                >กลับ</h1></a>
+                <a href="/products" className='flex flex-row justify-center  ' >
+                    <p className='shadow-[4px_4px_10px_#DBEFFF] cursor-pointer p-2 bg-white px-6 rounded-full border border-[#249CFF] text-[#249CFF]'>กลับ</p></a>
             </div>
         </div>
     )

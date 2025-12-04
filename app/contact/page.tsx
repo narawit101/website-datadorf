@@ -1,9 +1,62 @@
-import React from 'react'
+"use client";
+import React, { useState } from "react";
 
+type FormDataType = {
+  name: string;
+  phone: string;
+  email: string;
+  message: string;
+};
 
 export default function page() {
+  const [formData, setFormData] = useState<FormDataType>({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+
+    if (!formData.name.trim()) {
+      alert("กรุณากรอกชื่อ");
+      return;
+    }
+    if (!formData.phone.trim()) {
+      alert("กรุณากรอกเบอร์โทร");
+      return;
+    }
+    if (!formData.email.trim()) {
+      alert("กรุณากรอกอีเมล");
+      return;
+    }
+    if (!formData.message.trim()) {
+      alert("กรุณากรอกข้อความ");
+      return;
+    }
+    alert(
+      `ข้อมูลที่ส่ง:\nชื่อ: ${formData.name}\nเบอร์: ${formData.phone}\nอีเมล: ${formData.email}\nข้อความ: ${formData.message}`
+    );
+
+    setFormData({
+      name: "",
+      phone: "",
+      email: "",
+      message: "",
+    });
+  };
+
   return (
-    <div className='lg:pt-15 px-4 pt-15 mx-10'>
+    <div className='lg:pt-30 px-3 pt-20 xl:mx-10 mx-1 mb-10'>
       <div className='p-6 flex flex-col '>
         <p className='text-4xl lg:text-5xl text-[#249CFF] font-bold text-center'>ติดต่อเรา</p>
       </div>
@@ -49,35 +102,59 @@ export default function page() {
             </div>
           </div>
         </div>
-        <div className='flex flex-col border-2 bg-white border-[#FFFFFF] rounded-lg shadow-[4px_4px_10px_#DBEFFF]  lg:py-8 lg:px-15 p-4'>
-          <div className='grid grid-rows-1  lg:grid-cols-2 lg:gap-8 gap-15 '>
-            <div className='flex flex-col gap-4'>
-              <p className='font-light text-2xl'>ส่งข้อความหาเรา</p>
-              <input
-                placeholder='Name*'
-                className='flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4' type="text" />
-              <input
-                placeholder='Phone Number*'
-                className='flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4' type="text" />
-              <input
-                placeholder='Email*'
-                className='flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4' type="email" />
-
+        <form onSubmit={handleSubmit}>
+          <div className="flex flex-col border-2 bg-white border-[#FFFFFF] rounded-lg shadow-[4px_4px_10px_#DBEFFF] lg:py-8 lg:px-15 p-4">
+            <div className="grid grid-rows-1 lg:grid-cols-2 lg:gap-8 gap-8 ">
+              <div className="flex flex-col gap-4">
+                <p className="text-black font-light text-xl md:text-2xl">
+                  ส่งข้อความหาเรา
+                </p>
+                <input
+                  placeholder="Name*"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className=" flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4 placeholder:text-[#a5a5a5] focus:outline-[#6BB5F2] "
+                  type="text"
+                />
+                <input
+                  placeholder="Phone Number*"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4 placeholder:text-[#a5a5a5] focus:outline-[#6BB5F2]"
+                  type="text"
+                />
+                <input
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Email*"
+                  className="flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4 placeholder:text-[#a5a5a5] focus:outline-[#6BB5F2]"
+                  type="email"
+                />
+              </div>
+              <div>
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="message*"
+                  className="flex flex-col border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4 min-h-80 resize-y w-full placeholder:text-[#a5a5a5] focus:outline-[#6BB5F2]"
+                />
+              </div>
             </div>
-
-            <div>
-              <textarea
-                placeholder='message*'
-                className='flex flex-col  border border-[#CAE5FB] rounded-2xl xl:px-5 p-4 text-[10px] sm:text-sm lg:text-base gap-4 min-h-80 resize-y w-full' />
+            <div className="flex justify-center items-center my-10">
+              <button
+                type="submit"
+                className="text-white p-4 bg-[#6BB5F2] rounded-full shadow-xl hover:cursor-pointer hover:scale-105 transition-all"
+              >
+                ส่งข้อความ
+              </button>
             </div>
           </div>
-          <div className='flex justify-center items-center my-10'>
-            <button className=' text-white  p-4 bg-[#6BB5F2] rounded-full shadow-xl hover:cursor-pointer'>ส่งข้อความ</button>
-          </div>
-        </div>
-
+        </form>
       </div>
-
     </div>
   )
 }

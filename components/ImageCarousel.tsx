@@ -60,12 +60,12 @@ const styles = `
 
   .fade-mask::before {
     left: 0;
-    background: linear-gradient(to right, white 25%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, white 30%, rgba(255, 255, 255, 0) 100%);
   }
 
   .fade-mask::after {
     right: 0;
-    background: linear-gradient(to left, white 25%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to left, white 30%, rgba(255, 255, 255, 0) 100%);
   }
 `;
 
