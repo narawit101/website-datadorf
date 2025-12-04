@@ -9,7 +9,7 @@ interface StackCardItem {
     content: string;
     title: string[];
     images: string[];
-    tools: string[];
+    tools: { icon: string, name: string }[];
 }
 
 interface StackCardProps {
