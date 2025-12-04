@@ -7,7 +7,7 @@ export default function page() {
         <div>
             <div className='p-15'>
                 <div className='p-6 flex flex-col '>
-                    <p className='lg:text-5xl text-[#249CFF] font-bold text-center'>บริการของเรา</p>
+                    <p className='text-4xl lg:text-5xl text-[#249CFF] font-bold text-center'>บริการของเรา</p>
                     <p className='text-center font-light pt-6 lg:text-xl'>เดต้าดอร์ฟให้บริการออกแบบ พัฒนา และอิมพลิเมนต์ระบบ Business Intelligence (BI), Data Visualization และ Dashboards <br />เพื่อช่วยให้ธุรกิจของคุณสามารถ เปลี่ยนข้อมูลที่ซับซ้อนให้เป็น Insight เชิงลึกที่นำไปใช้ได้จริง</p>
                 </div>
                 <div className='grid grid-cols-1  gap-5  p-6  pt-15 '>
