@@ -15,7 +15,7 @@ export default function Navbar() {
     const menu = [
         {
             label: "หน้าแรก", href: "/", icon: (
-                <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 14 14" className="transition w-6 h-6 lg:w-10 lg:h-10">
+                <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 14 14" className="transition w-6 h-6 lg:w-8 lg:h-8">
                     <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1}>
                         <path d="M.5 8L7 1.5L13.5 8"></path>
                         <path d="M2.5 6v6.5h9V6"></path>
@@ -25,7 +25,7 @@ export default function Navbar() {
         },
         {
             label: "บริการ", href: "/services", icon: (
-                <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" className="transition w-6 h-6 lg:w-10 lg:h-10">
+                <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" className="transition w-6 h-6 lg:w-8 lg:h-8">
                     <path fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth="1.5"
                         d="m12 12l8.073-4.625M12 12v9.25M12 12L7.963 9.688m12.11-2.313a3.17 3.17 0 0 0-1.165-1.156L16.25 4.696m3.823 2.679c.275.472.427 1.015.427 1.58v6.09a3.15 3.15 0 0 1-1.592 2.736l-5.316 3.046A3.2 3.2 0 0 1 12 21.25M3.926 7.375a3.14 3.14 0 0 0-.426 1.58v6.09c0 1.13.607 2.172 1.592 2.736l5.316 3.046A3.2 3.2 0 0 0 12 21.25M3.926 7.375a3.17 3.17 0 0 1 1.166-1.156l5.316-3.046a3.2 3.2 0 0 1 3.184 0l2.658 1.523M3.926 7.375l4.037 2.313m0 0l8.287-4.992" />
                 </svg>
@@ -33,7 +33,7 @@ export default function Navbar() {
         },
         {
             label: "ผลงาน", href: "/products", icon: (
-                <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 14 14" className="transition w-6 h-6 lg:w-10 lg:h-10">
+                <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 14 14" className="transition w-6 h-6 ">
                     <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1}
                         d="M.625 12V2a1 1 0 0 1 1-1h2.72a1 1 0 0 1 .97.757L5.624 3h6.75a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1.625a1 1 0 0 1-1-1"></path>
                 </svg>
@@ -41,7 +41,7 @@ export default function Navbar() {
         },
         {
             label: "ติดต่อเรา", href: "/contact", icon: (
-                <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 14 14" className="transition w-6 h-6 lg:w-10 lg:h-10">
+                <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 14 14" className="transition w-6 h-6 ">
                     <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1}
                         d="M3 7V4.37A3.93 3.93 0 0 1 7 .5a3.93 3.93 0 0 1 4 3.87V7M1.5 5.5h1A.5.5 0 0 1 3 6v3a.5.5 0 0 1-.5.5h-1a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1m11 4h-1A.5.5 0 0 1 11 9V6a.5.5 0 0 1 .5-.5h1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1M9 12.25a2 2 0 0 0 2-2V8m-2 4.25a1.25 1.25 0 0 1-1.25 1.25h-1.5a1.25 1.25 0 0 1 0-2.5h1.5A1.25 1.25 0 0 1 9 12.25" />
                 </svg>
@@ -55,7 +55,7 @@ export default function Navbar() {
                 <Link href="/">
                     <img className='w-18 h-18 object-contain' src='datadorfLogo.png' alt="Logo" />
                 </Link>
-                <div className='hidden sm:flex gap-4 md:gap-8 lg:gap-10 items-center'>
+                <div className='hidden sm:flex gap-6 lg:gap-10 items-center'>
                     {menu.map(item => {
                         const isActive = path === item.href;
                         return (

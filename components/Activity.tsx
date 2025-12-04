@@ -50,7 +50,7 @@ export default function Activity({ items }: ActivityProps) {
                 <button
                     aria-label="Previous"
                     onClick={() => swiperRef?.slidePrev()}
-                    className="hidden md:flex absolute z-20 left-4 lg:left-6 lg:top-1/2 top-50 -translate-y-1/2 w-10 h-10 lg:w-12 lg:h-12 rounded-full border border-[#E2E8F0] text-[#5B5555] items-center justify-center hover:bg-[#e0dedead] transition-all duration-100"
+                    className="hidden md:flex absolute z-20 left-4 lg:left-6 lg:top-1/2 top-50 -translate-y-1/2 w-10 h-10 lg:w-12 lg:h-12 rounded-full border border-[#E2E8F0] text-[#5B5555] items-center justify-center hover:bg-[#e0dedead] transition-all duration-100 cursor-pointer"
                 >
                     <svg width="35" height="35" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M15.778 7.05L10.828 12l4.95 4.95l-1.414 1.414L8 12l6.364-6.364z" />
@@ -96,7 +96,7 @@ export default function Activity({ items }: ActivityProps) {
                                             <button
                                                 aria-label="Previous"
                                                 onClick={() => swiperRef?.slidePrev()}
-                                                className="md:hidden absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full border border-[#E2E8F0] bg-white/80 text-[#5B5555] flex items-center justify-center"
+                                                className="md:hidden absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full border border-[#E2E8F0] bg-white/80 text-[#5B5555] flex items-center justify-center cursor-pointer"
                                             >
                                                 <svg width="24" height="24" viewBox="0 0 24 24">
                                                     <path fill="currentColor" d="M15.778 7.05L10.828 12l4.95 4.95l-1.414 1.414L8 12l6.364-6.364z" />
@@ -105,7 +105,7 @@ export default function Activity({ items }: ActivityProps) {
                                             <button
                                                 aria-label="Next"
                                                 onClick={() => swiperRef?.slideNext()}
-                                                className="md:hidden absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full border border-[#E2E8F0] bg-white/80 text-[#5B5555] flex items-center justify-center"
+                                                className="md:hidden absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full border border-[#E2E8F0] bg-white/80 text-[#5B5555] flex items-center justify-center cursor-pointer"
                                             >
                                                 <svg width="24" height="24" viewBox="0 0 24 24">
                                                     <path fill="currentColor" d="M9 6.05L14.95 12L9 17.95l1.414 1.414L17.778 12l-7.364-7.364z" />
@@ -117,15 +117,15 @@ export default function Activity({ items }: ActivityProps) {
                                         <h3 className="text-[#249CFF] font-bold text-xl md:text-2xl">
                                             {item.content}
                                         </h3>
-                                        <p className="text-black leading-relaxed text-[14px] md:text-lg">
+                                        <p className="text-black leading-relaxed text-sm md:text-lg">
                                             {item.title}
                                         </p>
                                         <div className="flex flex-col gap-4 my-4 mx-auto lg:mx-0">
                                             <button
                                                 onClick={() => router.push("/services")}
-                                                className="mt-2 bg-white text-[#249CFF] border border-[#249CFF] py-2.5 px-6 rounded-full flex items-center justify-center md:justify-start gap-2 transition-all hover:bg-[#249CFF] hover:text-white hover:shadow-md self-center md:self-start  hover:cursor-pointer"
+                                                className="mt-2 bg-white text-[#249CFF] border border-[#249CFF] py-1 px-4 sm:py-2.5 sm:px-6 rounded-full flex items-center justify-center md:justify-start gap-2 transition-all hover:bg-[#249CFF] hover:text-white hover:shadow-md self-center md:self-start  hover:cursor-pointer"
                                             >
-                                                <span className="font-medium text-[12px] lg:text-[14px]">ดูกิจกรรมทั้งหมด</span>
+                                                <span className="font-medium text-[12px] lg:text-sm ">ดูกิจกรรมทั้งหมด</span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24"><path fill="currentColor" fillRule="evenodd" d="M9 6.75a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-1.5 0V7.81L6.53 18.53a.75.75 0 0 1-1.06-1.06L16.19 6.75z" clipRule="evenodd"></path></svg>
                                             </button>
                                         </div>
@@ -167,7 +167,7 @@ export default function Activity({ items }: ActivityProps) {
                 <button
                     aria-label="Next"
                     onClick={() => swiperRef?.slideNext()}
-                    className="hidden md:flex absolute z-20 right-4 lg:right-6 lg:top-1/2 top-50 -translate-y-1/2 w-10 h-10 lg:w-12 lg:h-12 rounded-full border border-[#E2E8F0] text-[#5B5555] items-center justify-center hover:bg-[#e0dedead] transition-all duration-100"
+                    className="hidden md:flex absolute z-20 right-4 lg:right-6 lg:top-1/2 top-50 -translate-y-1/2 w-10 h-10 lg:w-12 lg:h-12 rounded-full border border-[#E2E8F0] text-[#5B5555] items-center justify-center hover:bg-[#e0dedead] transition-all duration-100 cursor-pointer"
                 >
                     <svg width="35" height="35" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M9 6.05L14.95 12L9 17.95l1.414 1.414L17.778 12l-7.364-7.364z" />

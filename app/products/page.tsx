@@ -38,7 +38,7 @@ export default function page() {
                     <p className='text-4xl lg:text-5xl text-[#249CFF] font-bold text-center'>ผลงานของเรา</p>
                     <p className='text-center text-sm font-light px-2 pt-6 lg:text-xl'>เราช่วยธุรกิจของคุณเปลี่ยนข้อมูลที่ซับซ้อนให้เป็นภาพรวมที่ชัดเจน ด้วยระบบ Business Intelligence, Data Visualization และ Dashboards ที่ออกแบบมาเพื่อตอบโจทย์การตัดสินใจอย่างมีประสิทธิภาพ ชมตัวอย่างโซลูชันของเรา และค้นพบแนวทางใหม่ในการขับเคลื่อนธุรกิจด้วยข้อมูล</p>
                 </div>
-                <div className='grid grid-cols-2 gap-2 p-2 pt-10 mt-20 pb-30 md:gap-6 lg:grid-cols-3 lg:gap-15 lg '>
+                <div className='grid grid-cols-2 gap-2 p-2 pt-10 mt-20 md:pb-30 pb-15 md:gap-6 lg:grid-cols-3 lg:gap-15 lg '>
                     {currentItem.map((item, index) => {
 
                         return (
@@ -57,8 +57,8 @@ export default function page() {
                                     <div className='p-2 flex justify-center'>
                                         <button onClick={() => {
                                             router.push(`/productDetail/${item.id}`)
-                                        }} className='shadow-[4px_4px_10px_#DBEFFF] py-2 rounded-full px-4 mt-4 text-[#249CFF] border border-[#249CFF] text-[10px] md:text-base  cursor-pointer'>
-                                            อ่านเพิ่มเติม
+                                        }} className='shadow-[4px_4px_10px_#DBEFFF]  bg-white text-[#249CFF] border border-[#249CFF] py-1 px-4 sm:py-2.5 sm:px-6 rounded-full flex items-center justify-center gap-2 transition-all hover:bg-[#249CFF] hover:text-white hover:shadow-md hover:cursor-pointer'>
+                                            <p className='font-medium text-[10px] md:text-sm '>อ่านเพิ่มเติม</p>
                                         </button>
                                     </div>
                                 </div>
