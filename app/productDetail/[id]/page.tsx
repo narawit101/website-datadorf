@@ -15,7 +15,7 @@ import type { Swiper as SwiperType } from "swiper";
 export default function ProductDetailPage() {
     const { id } = useParams();
     const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null);
-     const mainSwiperRef = useRef<SwiperType | null>(null); 
+    const mainSwiperRef = useRef<SwiperType | null>(null);
 
     const product = MockProduct.find((item) => item.id === Number(id));
 
@@ -54,11 +54,11 @@ export default function ProductDetailPage() {
                     onClick={() => mainSwiperRef.current?.slidePrev()}
                     className="
                                 absolute left-2 top-1/2 -translate-y-1/2 
-                                bg-gray-200/70 backdrop-blur  p-2 rounded-full
-                                hover:border-[#249CFF] hover:border transition z-20 border border-[#E2E8F0] cursor-pointer
+                                bg-white/80 backdrop-blur  p-2 rounded-full
+                                hover:border transition z-20 border border-[#E2E8F0] cursor-pointer hover:bg-[#e0dedead]
                             "
                 >
-                    <svg className='text-[#5B5555]' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                    <svg className='text-[#5B5555]' xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M15.488 4.43a.75.75 0 0 1 .081 1.058L9.988 12l5.581 6.512a.75.75 0 1 1-1.138.976l-6-7a.75.75 0 0 1 0-.976l6-7a.75.75 0 0 1 1.057-.081" />
                     </svg>
                 </button>
@@ -67,11 +67,11 @@ export default function ProductDetailPage() {
                     onClick={() => mainSwiperRef.current?.slideNext()}
                     className="
                                 absolute right-2 top-1/2 -translate-y-1/2 
-                                bg-gray-200/70 backdrop-blur  p-2 rounded-full
-                                hover:border-[#249CFF] hover:border transition z-20 border border-[#E2E8F0] cursor-pointer
+                                bg-white/80 backdrop-blur  p-2 rounded-full
+                                hover:border transition z-20 border border-[#E2E8F0] cursor-pointer hover:bg-[#e0dedead]
                             "
                 >
-                    <svg className='text-[#5B5555]' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                    <svg className='text-[#5B5555]' xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M8.512 4.43a.75.75 0 0 1 1.057.082l6 7a.75.75 0 0 1 0 .976l-6 7a.75.75 0 0 1-1.138-.976L14.012 12L8.431 5.488a.75.75 0 0 1 .08-1.057" />
                     </svg>
                 </button>
@@ -121,9 +121,9 @@ export default function ProductDetailPage() {
                 </div>
             </div>
 
-            <div className='pt-5'>
-                <a href="/products" className='flex flex-row justify-center  ' ><p className='shadow-[4px_4px_10px_#DBEFFF] cursor-pointer p-2 bg-white px-6 rounded-full border border-[#249CFF] text-[#249CFF]'
-                >กลับ</p></a>
+            <div className='pt-4 '>
+                <a href="/products" className='flex flex-row justify-center  ' >
+                    <p className='shadow-[4px_4px_10px_#DBEFFF] cursor-pointer p-2 font-medium text-[10px] lg:text-sm bg-white text-[#249CFF] border border-[#249CFF] py-1 px-4 sm:py-2.5 sm:px-6 rounded-full flex items-center justify-center gap-2 transition-all hover:bg-[#249CFF] hover:text-white hover:shadow-md hover:cursor-pointer'>กลับ</p></a>
             </div>
         </div>
     )

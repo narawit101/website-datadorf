@@ -7,7 +7,7 @@ export default function page() {
         <div>
             <div className='p-15'>
                 <div className='p-6 flex flex-col '>
-                    <p className='lg:text-5xl text-[#249CFF] font-bold text-center'>บริการของเรา</p>
+                    <p className='text-4xl lg:text-5xl text-[#249CFF] font-bold text-center'>บริการของเรา</p>
                     <p className='text-center font-light pt-6 lg:text-xl'>เดต้าดอร์ฟให้บริการออกแบบ พัฒนา และอิมพลิเมนต์ระบบ Business Intelligence (BI), Data Visualization และ Dashboards <br />เพื่อช่วยให้ธุรกิจของคุณสามารถ เปลี่ยนข้อมูลที่ซับซ้อนให้เป็น Insight เชิงลึกที่นำไปใช้ได้จริง</p>
                 </div>
                 <div className='grid grid-cols-1  gap-5  p-6  pt-15 '>
@@ -19,15 +19,15 @@ export default function page() {
                         <div className='flex flex-col gap-3 md:gap-5 lg:gap-8 '>
                             <div className='flex gap-3 md:gap-5 '>
                                 <svg className='h-4 w-4 md:h-5 md:w-5 lg:h-8 lg:w-8' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path d="M42 20v19a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h21" /><path d="m16 20l10 8L41 7" /></g></svg>
-                                <p className='text-[14px] font-light md:text-[16px] lg:text-xl'>ดูข้อมูลแบบเรียลไทม์ผ่าน Dashboard</p>
+                                <p className='text-[14px] font-light md:text-base lg:text-xl'>ดูข้อมูลแบบเรียลไทม์ผ่าน Dashboard</p>
                             </div>
                             <div className='flex gap-3 md:gap-5'>
                                 <svg className='h-4 w-4 md:h-5 md:w-5 lg:h-8 lg:w-8' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path d="M42 20v19a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h21" /><path d="m16 20l10 8L41 7" /></g></svg>
-                                <p className='text-[14px] font-light md:text-[16px] lg:text-xl'>Dashboard ออกแบบเฉพาะธุรกิจ</p>
+                                <p className='text-[14px] font-light md:text-base lg:text-xl'>Dashboard ออกแบบเฉพาะธุรกิจ</p>
                             </div>
                             <div className='flex gap-3 md:gap-5'>
                                 <svg className='h-4 w-4 md:h-5 md:w-5 lg:h-8 lg:w-8' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path d="M42 20v19a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h21" /><path d="m16 20l10 8L41 7" /></g></svg>
-                                <p className='text-[14px] font-light  md:text-[16px] lg:text-xl'>อัปเดตข้อมูลและสร้างรายงานอัตโนมัติ</p>
+                                <p className='text-[14px] font-light  md:text-base lg:text-xl'>อัปเดตข้อมูลและสร้างรายงานอัตโนมัติ</p>
                             </div>
                         </div>
                     </div>
@@ -39,15 +39,15 @@ export default function page() {
                         <div className='flex flex-col gap-3 md:gap-5 lg:gap-8 '>
                             <div className='flex gap-3 md:gap-5 '>
                                 <svg className='h-4 w-4 md:h-5 md:w-5 lg:h-8 lg:w-8' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path d="M42 20v19a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h21" /><path d="m16 20l10 8L41 7" /></g></svg>
-                                <p className='text-[14px] font-light md:text-[16px] lg:text-xl'>วิเคราะห์ข้อมูลเชิงลึกเพื่อค้นหา Insight </p>
+                                <p className='text-[14px] font-light md:text-base lg:text-xl'>วิเคราะห์ข้อมูลเชิงลึกเพื่อค้นหา Insight </p>
                             </div>
                             <div className='flex gap-3 md:gap-5'>
                                 <svg className='h-4 w-4 md:h-5 md:w-5 lg:h-8 lg:w-8' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path d="M42 20v19a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h21" /><path d="m16 20l10 8L41 7" /></g></svg>
-                                <p className='text-[14px] font-light md:text-[16px] lg:text-xl'>คาดการณ์ยอดขายและวิเคราะห์พฤติกรรมลูกค้า</p>
+                                <p className='text-[14px] font-light md:text-base lg:text-xl'>คาดการณ์ยอดขายและวิเคราะห์พฤติกรรมลูกค้า</p>
                             </div>
                             <div className='flex gap-3 md:gap-5'>
                                 <svg className='h-4 w-4 md:h-5 md:w-5 lg:h-8 lg:w-8' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path d="M42 20v19a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h21" /><path d="m16 20l10 8L41 7" /></g></svg>
-                                <p className='text-[14px] font-light  md:text-[16px] lg:text-xl'>จำแนกกลุ่มลูกค้าและวิเคราะห์ความเสี่ยง</p>
+                                <p className='text-[14px] font-light  md:text-base lg:text-xl'>จำแนกกลุ่มลูกค้าและวิเคราะห์ความเสี่ยง</p>
                             </div>
                         </div>
                     </div>
@@ -59,15 +59,15 @@ export default function page() {
                         <div className='flex flex-col gap-3 md:gap-5 lg:gap-8  '>
                             <div className='flex gap-3 md:gap-5  '>
                                 <svg className='h-4 w-4 md:h-5 md:w-5 lg:h-8 lg:w-8' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path d="M42 20v19a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h21" /><path d="m16 20l10 8L41 7" /></g></svg>
-                                <p className='text-[14px] font-light md:text-[16px] lg:text-xl'>ให้คำปรึกษาการนำ BI ไปใช้ในองค์กร</p>
+                                <p className='text-[14px] font-light md:text-base lg:text-xl'>ให้คำปรึกษาการนำ BI ไปใช้ในองค์กร</p>
                             </div>
                             <div className='flex gap-3 md:gap-5'>
                                 <svg className='h-4 w-4 md:h-5 md:w-5 lg:h-8 lg:w-8' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path d="M42 20v19a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h21" /><path d="m16 20l10 8L41 7" /></g></svg>
-                                <p className='text-[14px] font-light md:text-[16px] lg:text-xl'>วิเคราะห์ความต้องการและออกแบบโซลูชัน BI</p>
+                                <p className='text-[14px] font-light md:text-base lg:text-xl'>วิเคราะห์ความต้องการและออกแบบโซลูชัน BI</p>
                             </div>
                             <div className='flex gap-3 md:gap-5'>
                                 <svg className='h-4 w-4 md:h-5 md:w-5 lg:h-8 lg:w-8' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4"><path d="M42 20v19a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h21" /><path d="m16 20l10 8L41 7" /></g></svg>
-                                <p className='text-[14px] font-light  md:text-[16px] lg:text-xl'>วางแผนและออกแบบ Data Architecture </p>
+                                <p className='text-[14px] font-light  md:text-base lg:text-xl'>วางแผนและออกแบบ Data Architecture </p>
                             </div>
                         </div>
                     </div>
