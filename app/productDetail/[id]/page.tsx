@@ -120,7 +120,7 @@ export default function ProductDetailPage() {
                             <p className='font-bold text-[#249CFF]'>เครื่องมีอที่ใช้</p>
                             <div className='grid grid-cols-3 gap-4 pt-5 md:grid-cols-5'>
                                 {product.tools.map((tool, index) => (
-                                    <div key={index} className="flex flex-col items-center gap-2  rounded-2xl py-4 shadow-[4px_4px_10px_#DBEFFF]">
+                                    <div key={index} className="flex flex-col items-center gap-2  rounded-2xl py-4 shadow-[4px_4px_10px_#DBEFFF] hover:-translate-y-3 transition-all duration-350">
                                         <div>
                                             <img src={tool.icon} alt={tool.name} className="size-10 object-contain md:size-20 lg:size-25" />
                                         </div>
