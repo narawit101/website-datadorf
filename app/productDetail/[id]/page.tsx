@@ -13,7 +13,7 @@ import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import type { Swiper as SwiperType } from "swiper";
 
 export default function ProductDetailPage() {
-    const { id } = useParams();
+    const { id } = useParams() as { id: string };
     const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null);
     const mainSwiperRef = useRef<SwiperType | null>(null);
 
